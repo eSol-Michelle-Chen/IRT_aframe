@@ -57,14 +57,28 @@
           </a-entity>
 
           <a-obj-model
-            position="0.5 9 0"
-            scale="4 4 4"
+            position="0.5 15 0"
+            scale="10 10 10"
             src="./models/oilanimation2.obj"
             color="#FFC65D, #FFC65D"
             rotation="0 -5 0"
             material="src: ./textures/darker_base_color.png; color: #FDE208; envMap: .textures/OilCylinder_initialShadingGroup_Height.png; metalness: 0.5; roughness: 1; sphericalEnvMap: ./textures/OilCylinder_initialShadingGroup_Normal.png;"
             animation="property: rotation; to: 0 -5 -95; loop: true; dur: 300"
           ></a-obj-model>
+        </a-entity>
+        <a-entity label position="0 0 0" scale="5 5 5">
+          <a-plane
+            position="-0.5 3 -5"
+            geometry="primitive: plane; width: 4.3; height: 1.25"
+            material="color: white"
+          ></a-plane>
+          <a-image position="1 3 -5" src="./hiro_marker.png"></a-image>
+          <a-image position="-2 3 -5" src="./qr_code.png"></a-image>
+          <a-text
+            value="Lubrication \n Nozzle!"
+            position="-1 3 -5"
+            color="black"
+          ></a-text>
         </a-entity>
       </a-marker>
       <a-entity camera rotation="0 0 0"></a-entity>
