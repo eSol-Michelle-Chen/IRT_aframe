@@ -12,7 +12,7 @@
   <body style="margin: 0px; overflow: hidden">
     <a-scene>
       <a-marker preset="hiro">
-        <a-entity nozzle position="0 0 0" rotation="0 270 270">
+        <a-entity nozzle position="3 0 0" rotation="0 270 270">
           <a-cylinder
             position="0 -1.15 0"
             radius="0.5"
@@ -36,12 +36,12 @@
             material="src: ./images/woody.png; color: #E5E4E2; repeat: 3.5 20"
           ></a-cone>
           <a-entity
-            position="0 1.25 0"
+            position="0 1.5 0"
             maxAge="0.1"
             scale="-0.5 1 0"
             rotation="10 0 0"
-            animation="property: position; to: 3 20 -1; dur: 1000; easing: linear; loop: true; delay: 3"
-            particle-system=" texture: https://cdn.rawgit.com/IdeaSpaceVR/aframe-particle-system-component/master/dist/images/smokeparticle.png; color: #FFC65D,#FFC65D; maxAge: 0.5; positionSpread: 0 0 0; rotationAngle: 0; accelerationValue: 0 10 0;  accelerationSpread: 0 0 10; velocityValue: -10 15 0; velocitySpread: 10 7.5 10; particleCount: 250; duration: 0;"
+            animation="property: position; to: 6 20 1; dur: 1500; easing: linear; loop: true; delay: 5"
+            particle-system=" texture: https://cdn.rawgit.com/IdeaSpaceVR/aframe-particle-system-component/master/dist/images/smokeparticle.png; color: #FFC65D,#FFC65D; maxAge: 0.5; positionSpread: 0 0 0; rotationAngle: 0; accelerationValue: 0 10 0;  accelerationSpread: 0 0 10; velocityValue: -10 15 0; velocitySpread: 20 7.5 10; particleCount: 250; duration: 0;"
           >
           </a-entity>
         </a-entity>
