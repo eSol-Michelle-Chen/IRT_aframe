@@ -17,7 +17,7 @@
   <body style="margin: 0px; overflow: hidden">
     <a-scene>
       <a-marker preset="hiro">
-        <a-entity nozzle position="2.5 3 0" rotation="50 180 -180">
+        <a-entity nozzle position="2.5 3 -2" rotation="90 180 -180">
           <a-cylinder
             position="0 -1.15 0"
             radius="0.5"
@@ -42,21 +42,21 @@
           ></a-cone>
           <a-entity
             position="0 1.75 0"
-            maxAge="0.001"
             scale="-0.5 1 0"
             rotation="1 0 0"
             animation="property: rotation; to: 1 0 0;dur: 1500; loop: true;"
-            particle-system=" texture: https://cdn.rawgit.com/IdeaSpaceVR/aframe-particle-system-component/master/dist/images/smokeparticle.png; color: #FFC65D,#FFC65D; maxAge: 0.23; positionSpread: 0.5 0 0; rotationAngle: 0; accelerationValue: 0 1 0;  accelerationSpread: 0 0 10; velocityValue: -10 15 0; velocitySpread: 10 0 10; particleCount: 225; duration: 0;"
+            particle-system=" texture: https://cdn.rawgit.com/IdeaSpaceVR/aframe-particle-system-component/master/dist/images/smokeparticle.png; color: #FFC65D,#FFC65D; maxAge: 0.215; positionSpread: 0.5 0 0; rotationAngle: 0; accelerationValue: 0 1 0;  accelerationSpread: 0 0 10; velocityValue: -10 15 0; velocitySpread: 10 0 10; particleCount: 225; duration: 0;"
           >
           </a-entity>
 
           <a-obj-model
-            position="0.5 8 0"
-            scale="3 3 3"
+            position="0.5 9 0"
+            scale="4 4 4"
             src="./models/oilanimation2.obj"
             color="#FFC65D, #FFC65D"
+            rotation="0 -5 0"
             material="src: ./textures/darker_base_color.png; color: #FDE208; envMap: .textures/OilCylinder_initialShadingGroup_Height.png; metalness: 0.5; roughness: 1; sphericalEnvMap: ./textures/OilCylinder_initialShadingGroup_Normal.png;"
-            animation="property: rotation; to: 0 0 -90; loop: true; dur: 300"
+            animation="property: rotation; to: 0 -5 -95; loop: true; dur: 300"
           ></a-obj-model>
         </a-entity>
       </a-marker>
