@@ -10,6 +10,8 @@
   // particle-system
   <script src="https://unpkg.com/aframe-particle-system-component@1.0.x/dist/aframe-particle-system-component.min.js"></script>
 
+  <script src="https://rawgit.com/ngokevin/aframe-look-at-component/master/dist/aframe-look-at-component.min.js"></script>
+
   <head>
     <title>HTML Test File</title>
   </head>
@@ -17,7 +19,12 @@
   <body style="margin: 0px; overflow: hidden">
     <a-scene>
       <a-marker preset="hiro">
-        <a-entity nozzle position="3 3 -3" rotation="90 180 -180">
+        <a-entity
+          nozzle
+          position="3 3 -3"
+          rotation="90 180 -170"
+          look-at="camera"
+        >
           <a-cylinder
             position="0 -1.15 0"
             radius="0.5"
