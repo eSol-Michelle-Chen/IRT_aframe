@@ -15,7 +15,7 @@
   <body style="margin: 0px; overflow: hidden">
     <a-scene>
       <a-marker preset="hiro">
-        <a-entity nozzle position="0 -5 0" rotation="45 180 -180">
+        <a-entity nozzle position="2.5 3 0" rotation="45 180 -180">
           <a-cylinder
             position="0 -1.15 0"
             radius="0.5"
@@ -48,8 +48,8 @@
           >
           </a-entity>
           <a-obj-model
-            position="0 4 0"
-            scale="1 1 1"
+            position="0.5 8 0"
+            scale="3 3 3"
             src="./models/oilanimation2.obj"
             color="#FFC65D"
             material="shader: flat;src: ./textures/darker_base_color.png; color: #FDE208; envMap: .textures/OilCylinder_initialShadingGroup_Height.png; metalness: 0.5; roughness: 0; sphericalEnvMap: ./textures/OilCylinder_initialShadingGroup_Normal.png;"
@@ -57,12 +57,13 @@
           ></a-obj-model>
         </a-entity>
       </a-marker>
+      <a-entity camera position="0 -1 0"></a-entity>
       <!-- <a-camera position="0 0 0" look-controls="enabled: false"></a-camera> -->
-      <a-entity
+      <!-- <a-entity
         camera
         look-controls="enabled: false"
         position="-1 -5 -5"
-      ></a-entity>
+      ></a-entity> -->
     </a-scene>
   </body>
 </html>
