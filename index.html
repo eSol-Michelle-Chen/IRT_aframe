@@ -18,14 +18,14 @@
             radius="0.5"
             height="3"
             color="#FFC65D"
-            material="src: texture.png; color: #E5E4E2; repeat: 1 1"
+            material="src: ./images/texture.png; color: #E5E4E2; repeat: 1 1"
           ></a-cylinder>
           <a-cylinder
             position="0 0.5 0"
             radius="0.5"
             height="0.3"
             color="#D3D3D3"
-            material="src: steel.png;color:#D3D3D3; repeat: 4 1.25"
+            material="src: ./images/steel.png;color:#D3D3D3; repeat: 4 1.25"
           ></a-cylinder>
           <a-cone
             position="0 1.15 0"
@@ -33,41 +33,20 @@
             radius-top="0.1"
             height="1"
             color="#C0C0C0"
-            material="src: woody.png; color: #E5E4E2; repeat: 3.5 20"
+            material="src: ./images/woody.png; color: #E5E4E2; repeat: 3.5 20"
           ></a-cone>
           <a-entity
             position="0 1.25 0"
             maxAge="0.1"
             scale="-0.5 1 0"
-            rotation = "10 0 0"
+            rotation="10 0 0"
             animation="property: position; to: 3 20 -1; dur: 1000; easing: linear; loop: true; delay: 3"
             particle-system=" texture: https://cdn.rawgit.com/IdeaSpaceVR/aframe-particle-system-component/master/dist/images/smokeparticle.png; color: #FFC65D,#FFC65D; maxAge: 0.5; positionSpread: 0 0 0; rotationAngle: 0; accelerationValue: 0 10 0;  accelerationSpread: 0 0 10; velocityValue: -10 15 0; velocitySpread: 10 7.5 10; particleCount: 250; duration: 0;"
           >
           </a-entity>
         </a-entity>
-
-   
       </a-marker>
       <a-entity camera></a-entity>
     </a-scene>
   </body>
 </html>
-
-
-     <!-- <a-entity backing position="1 -45 -15" >
-            <a-cylinder position="0 0 -15" radius="60" height="0.25" color="#C0C0C0" rotation = "90 180 0">
-
-            </a-cylinder>
-        </a-entity> 
-        <a-entity wheel position="2 -10 -7.25" >
-            <a-cylinder position="0 0 -3" radius="9" height="5" color="#C0C0C0" rotation = "90 180 0">
-
-            </a-cylinder>
-        </a-entity> 
-
-        <a-entity label position="-9 -10 -4.5" scale="5 5 5">
-            <a-plane  position="-0.5 3 -5" geometry="primitive: plane; width: 4.3; height: 1.25" material = "color: white"></a-plane>
-            <a-image position="1 3 -5" src="./hiro_marker.png"></a-image>
-            <a-image position="-2 3 -5" src="./qr_code.png"></a-image>
-            <a-text value="Lubrication \n Nozzle!" position="-1 3 -5" color="black"></a-text>
-            
