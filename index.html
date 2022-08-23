@@ -22,63 +22,59 @@
 
   <h1>Lubrication System</h1>
   <body style="margin: 0px; overflow: hidden">
-    <a-entity camera camera-logger the-camera>
-      <a-scene>
-        <a-marker
-          preset="custom"
-          type="pattern"
-          url="./marker/pattern-skf.patt"
+    <!-- <a-entity camera camera-logger the-camera> -->
+    <a-scene>
+      <a-marker preset="custom" type="pattern" url="./marker/pattern-skf.patt">
+        <a-entity
+          nozzle
+          rotation-reader
+          position="3 2 -3"
+          rotation="90 -180 -170"
+          look-at="camera"
         >
+          <a-cylinder
+            position="0 -1.15 0"
+            radius="0.5"
+            height="3"
+            color="#FFC65D"
+            material="src: ./images/texture.png; color: #E5E4E2; repeat: 1 1"
+          ></a-cylinder>
+          <a-cylinder
+            position="0 0.5 0"
+            radius="0.5"
+            height="0.3"
+            color="#D3D3D3"
+            material="src: ./images/steel.png;color:#D3D3D3; repeat: 4 1.25"
+          ></a-cylinder>
+          <a-cone
+            position="0 1.15 0"
+            radius-bottom="0.5"
+            radius-top="0.1"
+            height="1"
+            color="#C0C0C0"
+            material="src: ./images/woody.png; color: #E5E4E2; repeat: 3.5 20"
+          ></a-cone>
           <a-entity
-            nozzle
-            rotation-reader
-            position="3 2 -3"
-            rotation="90 -180 -170"
-            look-at="camera"
+            position="0 1.75 0"
+            scale="-0.5 1 0"
+            rotation="1 0 0"
+            animation="property: rotation; to: 1 0 0;dur: 1500; loop: true;"
+            particle-system=" texture: https://cdn.rawgit.com/IdeaSpaceVR/aframe-particle-system-component/master/dist/images/smokeparticle.png; color: #FFC65D,#FFC65D; maxAge: 0.215; positionSpread: 0.5 0 0; rotationAngle: 0; accelerationValue: 0 1 0;  accelerationSpread: 0 0 10; velocityValue: -10 15 0; velocitySpread: 10 0 10; particleCount: 225; duration: 0;"
           >
-            <a-cylinder
-              position="0 -1.15 0"
-              radius="0.5"
-              height="3"
-              color="#FFC65D"
-              material="src: ./images/texture.png; color: #E5E4E2; repeat: 1 1"
-            ></a-cylinder>
-            <a-cylinder
-              position="0 0.5 0"
-              radius="0.5"
-              height="0.3"
-              color="#D3D3D3"
-              material="src: ./images/steel.png;color:#D3D3D3; repeat: 4 1.25"
-            ></a-cylinder>
-            <a-cone
-              position="0 1.15 0"
-              radius-bottom="0.5"
-              radius-top="0.1"
-              height="1"
-              color="#C0C0C0"
-              material="src: ./images/woody.png; color: #E5E4E2; repeat: 3.5 20"
-            ></a-cone>
-            <a-entity
-              position="0 1.75 0"
-              scale="-0.5 1 0"
-              rotation="1 0 0"
-              animation="property: rotation; to: 1 0 0;dur: 1500; loop: true;"
-              particle-system=" texture: https://cdn.rawgit.com/IdeaSpaceVR/aframe-particle-system-component/master/dist/images/smokeparticle.png; color: #FFC65D,#FFC65D; maxAge: 0.215; positionSpread: 0.5 0 0; rotationAngle: 0; accelerationValue: 0 1 0;  accelerationSpread: 0 0 10; velocityValue: -10 15 0; velocitySpread: 10 0 10; particleCount: 225; duration: 0;"
-            >
-            </a-entity>
-            <!-- <a-entity test></a-entity> -->
           </a-entity>
-        </a-marker>
-        <a-marker preset="hiro">
-          <a-box
-            position="0 0 0"
-            material="color: yellow;"
-            scale="1 1 1"
-            color="#4CC3D9"
-          ></a-box>
-        </a-marker>
-        <!-- <a-entity camera></a-entity> -->
-      </a-scene>
-    </a-entity>
+          <!-- <a-entity test></a-entity> -->
+        </a-entity>
+      </a-marker>
+      <a-marker preset="hiro">
+        <a-box
+          position="0 0 0"
+          material="color: yellow;"
+          scale="1 1 1"
+          color="#4CC3D9"
+        ></a-box>
+      </a-marker>
+      <!-- <a-entity camera></a-entity> -->
+    </a-scene>
+    <!-- </a-entity> -->
   </body>
 </html>
