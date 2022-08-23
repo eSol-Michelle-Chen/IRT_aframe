@@ -50,10 +50,10 @@ AFRAME.registerComponent("rotation-reader", {
     return function () {
       var worldPosition = this.el.object3D.getWorldPosition(position);
       var worldDirection = this.el.object3D.getWorldDirection();
-      var quaternion = this.el.object3D.getWorldQuaternion(quaternion);
-      this.el.object3D.applyQuaternion(quaternion);
+      var worldQuaternion = this.el.object3D.getWorldQuaternion(quaternion);
+      this.el.object3D.applyQuaternion(worldQuaternion);
       this.el.object3D.lookAt(worldDirection);
-      // this.el.object3D.localToWorld(worldPosition);
+      this.el.object3D.localToWorld(worldPosition);
     };
   })(),
 });
